@@ -17,4 +17,4 @@ docker compose down
 1. HOST 127.0.0.1
 2. PORT 3306
 3. Usuario por default root
-4. Contraseña la que se designa en el docker-compose
+4. Contraseña la que se designa en el docker-compose.yml
