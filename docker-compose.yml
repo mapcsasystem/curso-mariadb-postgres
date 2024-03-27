@@ -1,0 +1,71 @@
+version: '3'
+
+services:
+  # postgresDB:
+  #   image: postgres:16.2
+  #   container_name: postgres-database
+  #   restart: always
+  #   ports:
+  #     - 5432:5432
+  #   environment:
+  #     - POSTGRES_USER=alumno
+  #     - POSTGRES_PASSWORD=123456
+  #     - POSTGRES_DB=course-db
+  #   volumes:
+  #     - ./postgres:/var/lib/postgresql/data
+  
+  # pdAdmin:
+  #   image: dpage/pgadmin4
+  #   container_name: pgadmin4
+  #   restart: always
+  #   depends_on:
+  #     - postgresDB
+  #   ports:
+  #     - 8080:80
+  #   environment:
+  #     - PGADMIN_DEFAULT_EMAIL=alumno@google.com
+  #     - PGADMIN_DEFAULT_PASSWORD=123456789
+  #   volumes:
+  #     - ./pgadmin:/var/lib/pgadmin
+  #     - ./pgadmin:/certs/server.cert
+  #     - ./pgadmin:/certs/server.key
+  #     - ./pgadmin:/pgadmin4/servers.json
+  
+  
+  # mariaDB:
+  #   image: mariadb:jammy
+  #   container_name: world-db
+  #   restart: always
+  #   ports:
+  #     - 3306:3306
+  #   environment:
+  #     - MARIADB_USER=example-user
+  #     - MARIADB_PASSWORD=user-password
+  #     - MARIADB_ROOT_PASSWORD=root-secret-password
+  #     - MARIADB_DATABASE=world-db
+  #   volumes:
+  #     - ./maria:/var/lib/mysql
+
+  mariaDB:
+    image: mariadb:jammy
+    container_name: maria-db
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      - MARIADB_ROOT_PASSWORD=user-root
+    volumes:
+      - ./maria:/var/lib/mysql
+
+  # phpmyadmin:
+  #   image: phpmyadmin:5.2.0-apache
+  #   container_name: phpmyadmin
+  #   restart: always
+  #   depends_on:
+  #     - mariaDB
+  #   ports:
+  #     - 8080:80
+  #   environment:
+  #     - PMA_ARBITRARY=1
+    # volumes:
+    #   - ./phpmyadmin:/etc/phpmyadmin
