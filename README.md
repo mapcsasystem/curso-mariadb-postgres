@@ -1,8 +1,9 @@
 # CURSO mariaDB/MySQL y postgresql 
 
 ## Requisitos
-1. Tener instalado docker y docker-compose
-2. Tener instalado un gestor de base de datos mysql-compass, dbeaver
+1. En Linux tener instalado docker y docker-compose 
+2. Windows y MacOS instalar docker-desktop ya trae docker y docker-compose
+3. Tener instalado un gestor de base de datos mysql-compass, dbeaver
 
 ## Levantar base de datos en la raíz del proyecto
 ```
