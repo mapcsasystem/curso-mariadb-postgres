@@ -296,10 +296,3 @@ WHERE UPPER(email) LIKE '%@GMAIL.COM';
 -- NOTA es buena practica convertir a mayusculas o minusculas para buscar mas efectivamente
 SELECT name, email  FROM customer
 WHERE UPPER(name) LIKE '__A%';
-
-
-
-
-
-
-	

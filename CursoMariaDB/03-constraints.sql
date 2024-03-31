@@ -129,5 +129,3 @@ VALUES ('JUan','juanito@gmail.com', 4);
 
 SELECT * FROM city;
 SELECT * FROM customer;
-
- 
