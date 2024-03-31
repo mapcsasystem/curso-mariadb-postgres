@@ -1,6 +1,8 @@
 -- =====================Usar Base de Datos=====================
 use store;
 
+-- =====================WHERE A DETALLE=====================
+
 -- 1.Opereador AND, OR y NOT todo se enfocara en el WHERE 
 -- este funciona en el SELECT, DELETE ,UPDATE para filtrar informacioón
 

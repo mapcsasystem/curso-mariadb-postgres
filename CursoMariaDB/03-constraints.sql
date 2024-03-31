@@ -2,6 +2,7 @@
 use store;
 
 -- =====================Constraints ó restricciones=====================
+
 -- Sirve para validar datos especificamente  tener coherencia con los datos
 
 -- 1. CONSTRAINT PRIMARY KEY

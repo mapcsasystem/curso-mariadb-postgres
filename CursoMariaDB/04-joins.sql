@@ -2,6 +2,7 @@
 use store;
 
 -- =====================JOINS=====================
+
 -- Son convinaciones de tablas se aplican entre tabla o varias tablas la convinacion puede ser muchas
 -- veces por el fk siempre en los SELECT se hace referencia a customer como ejemplo por lo tanto
 -- en customer quedaria del lado izquierdo y city del lado dereccho
